@@ -14,9 +14,13 @@ $(document).ready(function() {
 
     // Animate progress bars and show only the percentage inside
     $('.progress-bar').each(function() {
-        var percentage = $(this).data('percentage');
-        $(this).css('width', percentage + '%');
-        $(this).text(percentage + '%');
+        var $bar = $(this);
+        var percentage = $bar.data('percentage');
+        $bar.text(percentage + '%');
+        $bar.css('width', '0%'); // Ensure starting at 0%
+        setTimeout(function() {
+            $bar.css('width', percentage + '%');
+        }, 150); // Small delay ensures animation triggers
     });
 
     // Set current year in footer
