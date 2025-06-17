@@ -1,9 +1,135 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=homepage.html">
-  </head>
-  <body>
-    <p>If you are not redirected automatically, follow this <a href="homepage.html">link</a>.</p>
-  </body>
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>Your Professional Title / Tagline</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Write a brief introduction about yourself here. Highlight your passion,
+                key strengths, and career goals.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skill">
+                <p>HTML</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" data-percentage="90%">HTML - 90%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>CSS</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" data-percentage="85%">CSS - 85%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" data-percentage="75%">JavaScript - 75%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>JQuery</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" data-percentage="70%">JQuery - 70%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>Another Skill (e.g., Python, React)</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" data-percentage="60%">Another Skill - 60%</div>
+                </div>
+            </div>
+            <!-- Add more skills as needed -->
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Your Degree Name (e.g., B.S. in Computer Science)</h3>
+                <p><strong>Institution:</strong> Your University Name</p>
+                <p><strong>Graduation Year:</strong> 20XX</p>
+                <p><strong>GPA/Grade:</strong> X.XX / Relevant Grade</p>
+                <p><em>Relevant Coursework/Achievements: Calculus, Data Structures, Senior Project on X.</em></p>
+            </div>
+            <div class="education-item">
+                <h3>Another Degree or Certificate (if applicable)</h3>
+                <p><strong>Institution:</strong> Institution Name</p>
+                <p><strong>Completion Year:</strong> 20XX</p>
+                <p><strong>Details:</strong> Any relevant details.</p>
+            </div>
+            <!-- Add more education items as needed -->
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Your Job Title (e.g., Software Engineer Intern)</h3>
+                <p><strong>Company:</strong> Company Name | <strong>Location:</strong> City, State</p>
+                <p><strong>Dates:</strong> Month YYYY – Month YYYY</p>
+                <ul>
+                    <li>Describe your key responsibilities and achievements.</li>
+                    <li>Use action verbs to start your bullet points.</li>
+                    <li>Quantify your accomplishments whenever possible.</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Previous Job Title (if applicable)</h3>
+                <p><strong>Company:</strong> Previous Company Name | <strong>Location:</strong> City, State</p>
+                <p><strong>Dates:</strong> Month YYYY – Month YYYY</p>
+                <ul>
+                    <li>Responsibility or achievement 1.</li>
+                    <li>Responsibility or achievement 2.</li>
+                </ul>
+            </div>
+            <!-- Add more experience items as needed -->
+        </section>
+
+        <section id="website-stats">
+            <h2>Website Statistics</h2>
+            <p><strong>Active Users Online:</strong> <span id="active-users-count">N/A</span></p>
+            <p><strong>Views per GitHub Account:</strong> <span id="github-view-count">N/A</span></p>
+            <div class="note">
+                <p><strong>Note:</strong> The features for "Active Users Online" and "Views per GitHub Account" require backend development (server-side programming and potentially a database) and cannot be implemented with only HTML, CSS, and client-side JavaScript. The values above are placeholders.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">linkedin.com/in/yourprofile</a></p>
+            <p>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Your Name. All rights reserved.</p>
+    </footer>
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Your custom JavaScript file -->
+    <script src="script.js"></script>
+</body>
 </html>
