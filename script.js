@@ -12,12 +12,13 @@ $(document).ready(function() {
         }
     });
 
-    // Animate progress bars
+    // Animate progress bars and show only the percentage inside
     $('.progress-bar').each(function() {
         var percentage = $(this).data('percentage');
-        $(this).css('width', percentage);
-        // $(this).text(percentage); // If you want text inside bar, ensure HTML structure supports it
+        $(this).css('width', percentage + '%');
+        $(this).text(percentage + '%');
     });
 
     // Set current year in footer
     $('#current-year').text(new Date().getFullYear());
+});
