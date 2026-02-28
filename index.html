@@ -1,135 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="day">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <meta name="description" content="Executive minimalist personal website.">
+    <meta property="og:title" content="Executive Portfolio">
+    <meta property="og:description" content="Executive minimalist personal website.">
+    <meta property="og:type" content="website">
+    <title>Executive Portfolio</title>
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#F7F5F0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Your Professional Title / Tagline</p>
+    <header class="site-header">
+        <nav class="nav">
+            <div class="nav-inner">
+                <div class="header-banner" role="banner" aria-label="Current date time weather">
+                    <div id="banner-date" class="banner-item" aria-live="polite">[date]</div>
+                    <div id="banner-time" class="banner-item" aria-live="polite">[time]</div>
+                    <div id="banner-weather" class="banner-item" aria-live="polite">[weather]</div>
+                </div>
+                <ul class="nav-menu" role="menu">
+                    <li class="menu-brand">
+                        <div class="wordmark">PORTFOLIO</div>
+                    </li>
+                    <li class="menu-theme">
+                        <button class="theme-toggle" id="theme-toggle" type="button" data-mode="auto" aria-label="Theme: Auto (click to cycle Day, Auto, Night)" title="Theme: Auto">
+                            <span class="theme-toggle-label">Day</span>
+                            <span class="theme-toggle-label-auto">Auto</span>
+                            <span class="theme-toggle-label">Night</span>
+                            <span class="sr-only">Current theme: Auto. Click to cycle through Day, Auto, and Night modes.</span>
+                        </button>
+                    </li>
+                    <li class="menu-units" role="group" aria-label="Temperature units">
+                        <div class="unit-toggle" id="unit-toggle">
+                            <button class="unit-btn" data-unit="both" aria-pressed="true">Both</button>
+                            <button class="unit-btn" data-unit="F" aria-pressed="false">°F</button>
+                            <button class="unit-btn" data-unit="C" aria-pressed="false">°C</button>
+                        </div>
+                    </li>
+                    <li class="mobile-only"><a href="#home">Banner</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+                <button class="hamburger" aria-label="Open navigation" aria-expanded="false" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Write a brief introduction about yourself here. Highlight your passion,
-                key strengths, and career goals.
-            </p>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skill">
-                <p>HTML</p>
-                <div class="progress-bar-container">
-                    <div class="progress-bar" data-percentage="90"></div>
+    <main>
+        <section id="home" class="section hero reveal" aria-label="Banner — date time weather">
+            <div class="container hero-shell">
+                <div class="hero-frame" role="region" aria-label="Banner (mobile)">
+                    <div class="hero-copy banner-only">
+                        <div class="banner-row">
+                            <div class="banner-item placeholder">[Banner visible on mobile menu only — header shows live date/time/weather]</div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="skill">
-                <p>CSS</p>
-                <div class="progress-bar-container">
-                    <div class="progress-bar" data-percentage="85"></div>
+        </section>
+
+        <section id="about" class="section reveal">
+            <div class="container section-inner">
+                <div class="section-header">
+                    <h2 class="section-title title-serif">[About]</h2>
+                    <div class="section-rule" aria-hidden="true"></div>
+                </div>
+                <div class="section-body">
+                    <p class="placeholder">[Add your About text here — each paragraph will align to the ruled lines]</p>
                 </div>
             </div>
-            <div class="skill">
-                <p>JavaScript</p>
-                <div class="progress-bar-container">
-                    <div class="progress-bar" data-percentage="75"></div>
+        </section>
+
+        <section id="portfolio" class="section section-alt reveal">
+            <div class="container section-inner">
+                <div class="section-header">
+                    <h2 class="section-title title-serif">[Portfolio]</h2>
+                    <div class="section-rule" aria-hidden="true"></div>
+                </div>
+                <div class="portfolio-grid">
+                    <article class="portfolio-card reveal" aria-labelledby="p1-title">
+                        <h3 id="p1-title" class="placeholder">[Project / Case study title]</h3>
+                        <p class="placeholder">[Short description — replace me]</p>
+                    </article>
+                    <article class="portfolio-card reveal" aria-labelledby="p2-title">
+                        <h3 id="p2-title" class="placeholder">[Project / Case study title]</h3>
+                        <p class="placeholder">[Short description — replace me]</p>
+                    </article>
+                    <article class="portfolio-card reveal" aria-labelledby="p3-title">
+                        <h3 id="p3-title" class="placeholder">[Project / Case study title]</h3>
+                        <p class="placeholder">[Short description — replace me]</p>
+                    </article>
+                    <article class="portfolio-card reveal" aria-labelledby="p4-title">
+                        <h3 id="p4-title" class="placeholder">[Project / Case study title]</h3>
+                        <p class="placeholder">[Short description — replace me]</p>
+                    </article>
                 </div>
             </div>
-            <div class="skill">
-                <p>JQuery</p>
-                <div class="progress-bar-container">
-                    <div class="progress-bar" data-percentage="70"></div>
-                </div>
-            </div>
-            <div class="skill">
-                <p>Another Skill (e.g., Python, React)</p>
-                <div class="progress-bar-container">
-                    <div class="progress-bar" data-percentage="60"></div>
-                </div>
-            </div>
-            <!-- Add more skills as needed -->
         </section>
+    </main>
 
-        <section id="education">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>Your Degree Name (e.g., B.S. in Computer Science)</h3>
-                <p><strong>Institution:</strong> Your University Name</p>
-                <p><strong>Graduation Year:</strong> 20XX</p>
-                <p><strong>GPA/Grade:</strong> X.XX / Relevant Grade</p>
-                <p><em>Relevant Coursework/Achievements: Calculus, Data Structures, Senior Project on X.</em></p>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-links">
+                <a href="https://discord.com/invite/qKXdqrUjmc" class="footer-link" target="_blank" rel="noopener noreferrer">Discord</a>
+                <a href="https://www.linkedin.com/in/zachary-soignoli/" class="footer-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
-            <div class="education-item">
-                <h3>Another Degree or Certificate (if applicable)</h3>
-                <p><strong>Institution:</strong> Institution Name</p>
-                <p><strong>Completion Year:</strong> 20XX</p>
-                <p><strong>Details:</strong> Any relevant details.</p>
-            </div>
-            <!-- Add more education items as needed -->
-        </section>
-
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="experience-item">
-                <h3>Your Job Title (e.g., Software Engineer Intern)</h3>
-                <p><strong>Company:</strong> Company Name | <strong>Location:</strong> City, State</p>
-                <p><strong>Dates:</strong> Month YYYY – Month YYYY</p>
-                <ul>
-                    <li>Describe your key responsibilities and achievements.</li>
-                    <li>Use action verbs to start your bullet points.</li>
-                    <li>Quantify your accomplishments whenever possible.</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Previous Job Title (if applicable)</h3>
-                <p><strong>Company:</strong> Previous Company Name | <strong>Location:</strong> City, State</p>
-                <p><strong>Dates:</strong> Month YYYY – Month YYYY</p>
-                <ul>
-                    <li>Responsibility or achievement 1.</li>
-                    <li>Responsibility or achievement 2.</li>
-                </ul>
-            </div>
-            <!-- Add more experience items as needed -->
-        </section>
-
-        <section id="website-stats">
-            <h2>Website Statistics</h2>
-            <p><strong>Active Users Online:</strong> <span id="active-users-count">N/A</span></p>
-            <p><strong>Views per GitHub Account:</strong> <span id="github-view-count">N/A</span></p>
-            <div class="note">
-                <p><strong>Note:</strong> The features for "Active Users Online" and "Views per GitHub Account" require backend development (server-side programming and potentially a database) and can[...]
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">linkedin.com/in/yourprofile</a></p>
-            <p>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener">github.com/yourusername</a></p>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; <span id="current-year"></span> Your Name. All rights reserved.</p>
+        </div>
     </footer>
 
-    <!-- JQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Your custom JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
